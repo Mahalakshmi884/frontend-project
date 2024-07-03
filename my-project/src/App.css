@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font size */
+html {
+  font-size: 16px;
+}
+
+/* Responsive typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive navigation bar */
+.navbar {
+  background-color: blue;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+/* Responsive grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  .container {
+    padding: 0 10px;
+  }
+
+  .col {
+    flex: 0 0 100%; /* Full width on small screens */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Adjust layout for large screens */
+  .col {
+    flex: 0 0 50%; /* Half width on large screens */
+  }
+}
+
+/* Attractive button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
